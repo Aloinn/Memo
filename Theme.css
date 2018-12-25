@@ -1,0 +1,45 @@
+*{
+  margin: 0px auto;
+}
+body{
+  background-color: #efefef;
+  font-size: 62.5%;
+  font-family: 'Thasadith';
+}
+h1{
+  margin: 0px auto;
+  font-family: 'Cuprum';
+  font-size: 6em;
+  color: #efefef;
+}
+#Logo{
+
+}
+#Title{
+  text-align: center;
+}
+/*
+.Wrapper{
+width: 1200px;
+height:1200px;
+}
+*/
+.Banner{
+  background-color: Firebrick;
+  padding: 20px 0px 15px 0px;
+}
+.Navigation{
+  color: #efefef;
+  background-color: Firebrick;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.Navigation a{
+  font-family: 'Thasadith';
+  font-size: 3em;
+
+  margin-left: 3vw;
+  margin-right: 3vw;
+  border-radius: 2px;
+}
