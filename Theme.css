@@ -8,7 +8,7 @@ body{
   font-family: 'Raleway';
 }
 .Banner h1{
-  font-size: 6em;
+  font-size: 4em;
   color: #efefef;
 }
 h1{
@@ -21,7 +21,11 @@ p{
   font-size:2em;
 }
 #Logo{
-
+  position: absolute;
+  display: block;
+  top:0px;
+  left:25px;
+  //left: calc(50% - 255px);
 }
 #Title{
   text-align: center;
@@ -31,6 +35,19 @@ p{
   padding: 20px 0px 15px 0px;
 
   z-index: -3;
+}
+.Links{
+  margin-top: 45px;
+  margin-left: 2px;
+  font-size: 1.5em;
+  position: absolute;
+  text-align: left;
+}
+.Links a{
+  color: #efefef;
+  margin-left: 20px;
+  margin-right: 20px;
+
 }
 .Navigation{
   color: #efefef;
@@ -71,7 +88,7 @@ p{
 .Wrapper{
   background-color: #efefef;
   width: 1200px;
-  height:1200px;
+  height:500px;
 
   z-index: 0;
 }
@@ -108,4 +125,13 @@ main{
 aside{
   width:300px;
   float:right;
+}
+.Footer{
+  background-color: Firebrick;
+}
+.End{
+  color: #efefef;
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  background-color: DarkRed;
 }
