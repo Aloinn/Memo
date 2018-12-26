@@ -1,16 +1,24 @@
 *{
   margin: 0px auto;
+  position: relative;
 }
 body{
   background-color: #efefef;
   font-size: 62.5%;
-  font-family: 'Thasadith';
+  font-family: 'Raleway';
+}
+.Banner h1{
+  font-size: 6em;
+  color: #efefef;
 }
 h1{
   margin: 0px auto;
+
+  font-size:4em;
   font-family: 'Cuprum';
-  font-size: 6em;
-  color: #efefef;
+}
+p{
+  font-size:2em;
 }
 #Logo{
 
@@ -18,28 +26,86 @@ h1{
 #Title{
   text-align: center;
 }
-/*
-.Wrapper{
-width: 1200px;
-height:1200px;
-}
-*/
 .Banner{
   background-color: Firebrick;
   padding: 20px 0px 15px 0px;
+
+  z-index: -3;
 }
 .Navigation{
   color: #efefef;
   background-color: Firebrick;
   padding-top: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 3px;
   text-align: center;
-}
-.Navigation a{
-  font-family: 'Thasadith';
-  font-size: 3em;
 
-  margin-left: 3vw;
-  margin-right: 3vw;
+  z-index: 2;
+}
+.Navigation button{
+  font-family: 'Raleway';
+  font-size: 2em;
+  color: #efefef;
+  background-color: DarkRed;
+
+  width: calc(20% - 4px);
+  padding: 10px 0px 7px 0px;
+  margin: 0px auto;
+  border: none;
+
   border-radius: 2px;
+
+}
+.Navigation button:hover{
+  background-color: IndianRed;
+}
+.Newsbar{
+  font-family: Cuprum;
+  font-size: 0.8em;
+  padding: 5px 0px 3px 0px;
+  background-color: #efefef;
+  box-shadow: 0px 7px 30px black;
+  text-align: center;
+
+  z-index: 1
+}
+.Wrapper{
+  background-color: #efefef;
+  width: 1200px;
+  height:1200px;
+
+  z-index: 0;
+}
+.MainIMG{
+  margin-left: 0px auto;
+  margin-right: 0px auto;
+  display:block;
+
+  z-index: 0;
+}
+.MainIMG h2{
+  margin: 0px auto;
+  position: absolute;
+
+  bottom:30px;
+  left:30px;
+
+  font-size: 6vw;
+  font-family: 'Cuprum';
+  color: #efefef;
+}
+.MIMG{
+  filter: contrast(90%) brightness(60%);
+  width: 100%;
+}
+#Quotes{
+
+}
+main{
+  margin-top: 10px;
+  width:900px;
+  float:left;
+}
+aside{
+  width:300px;
+  float:right;
 }
