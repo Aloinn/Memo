@@ -8,11 +8,11 @@ body{
   font-family: 'Raleway';
 }
 .Banner h1{
-  font-size: 4em;
+  font-size: 5.7em;
   color: #efefef;
 }
 h1{
-  margin: 0px auto;
+  margin-left: 20px;
 
   font-size:4em;
   font-family: 'Cuprum';
@@ -32,23 +32,49 @@ p{
 }
 .Banner{
   background-color: Firebrick;
-  padding: 20px 0px 15px 0px;
+  padding: 5px 0px 0px 0px;
 
   z-index: -3;
 }
 .Links{
-  margin-top: 45px;
-  margin-left: 2px;
+  margin-left: 35px;
+
+  line-height: 30px;
   font-size: 1.5em;
+
   position: absolute;
   text-align: left;
 }
 .Links a{
   color: #efefef;
-  margin-left: 20px;
-  margin-right: 20px;
 
+  margin-left: 10px;
+  margin-right: 20px;
 }
+.Links img{
+  position: absolute;
+  left: -20px;
+}
+#SMIMG{
+  margin-top: -10px;
+
+  position: absolute;
+  text-align: left;
+
+  left: 15px;
+  top: 25px;
+}
+#SMLINKS{
+  margin-top: 5px;
+
+  position: absolute;
+  text-align: left;
+}
+.LinksIMG{
+  line-height: 30px;
+  font-size: 1.5em;
+}
+
 .Navigation{
   color: #efefef;
   background-color: Firebrick;
@@ -60,11 +86,11 @@ p{
 }
 .Navigation button{
   font-family: 'Raleway';
-  font-size: 2em;
+  font-size: 1.6em;
   color: #efefef;
   background-color: DarkRed;
 
-  width: calc(20% - 4px);
+  width: calc(20% - 3px);
   padding: 10px 0px 7px 0px;
   margin: 0px auto;
   border: none;
@@ -106,7 +132,7 @@ p{
   bottom:30px;
   left:30px;
 
-  font-size: 6vw;
+  font-size: 4vw;
   font-family: 'Cuprum';
   color: #efefef;
 }
