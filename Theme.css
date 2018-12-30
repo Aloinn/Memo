@@ -7,10 +7,6 @@ body{
   font-size: 62.5%;
   font-family: 'Raleway';
 }
-.Banner h1{
-  font-size: 5.7em;
-  color: #efefef;
-}
 h1{
   margin-left: 20px;
 
@@ -20,6 +16,57 @@ h1{
 p{
   font-size:2em;
 }
+/*
+===================================
+              BANNER
+===================================
+*/
+.Banner{
+  background-color: Firebrick;
+  padding: 0px 0px 0px 0px;
+
+  z-index: -3;
+}
+/*TALKS ABOUT THE TITLE (YORK MEMORIAL)*/
+.Banner h1{
+  font-size: 5.4em;
+  color: #efefef;
+}
+#Title{
+  margin-left:10px;
+  text-align: center;
+}
+/*TALKS ABOUT THE LINK*/
+#Links{
+  position:absolute;
+  text-align: right;
+
+  top:15px;
+  right: 40px;
+}
+#Links a{
+  line-height: 30px;
+  font-size: 1.5em;
+  color: #efefef;
+}
+/*TALKS ABOUT THE IMAGES BESIDES THE LINK*/
+#LinksIMG{
+  position: absolute;
+  text-align: left;
+
+  right: 10px;
+  top: 15px;
+}
+#LinksIMG img{
+  margin-top: 4px;
+  margin-bottom:4px;
+  font-size: 1.5em;
+}
+/*
+===================================
+              MENU
+===================================
+*/
 #Logo{
   position: absolute;
   display: block;
@@ -27,53 +74,10 @@ p{
   left:25px;
   //left: calc(50% - 255px);
 }
-#Title{
-  text-align: center;
-}
-.Banner{
-  background-color: Firebrick;
-  padding: 5px 0px 0px 0px;
 
-  z-index: -3;
-}
-.Links{
-  margin-left: 35px;
 
-  line-height: 30px;
-  font-size: 1.5em;
 
-  position: absolute;
-  text-align: left;
-}
-.Links a{
-  color: #efefef;
 
-  margin-left: 10px;
-  margin-right: 20px;
-}
-.Links img{
-  position: absolute;
-  left: -20px;
-}
-#SMIMG{
-  margin-top: -10px;
-
-  position: absolute;
-  text-align: left;
-
-  left: 15px;
-  top: 25px;
-}
-#SMLINKS{
-  margin-top: 5px;
-
-  position: absolute;
-  text-align: left;
-}
-.LinksIMG{
-  line-height: 30px;
-  font-size: 1.5em;
-}
 
 .Navigation{
   color: #efefef;
@@ -150,7 +154,23 @@ main{
 }
 aside{
   width:300px;
-  float:right;
+  float:left;
+}
+@media only screen and (max-width:1200px){
+  #Title{
+    text-align: left;
+  }
+  /*.Navigation button{
+    width: 100vw;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }*/
+  main{
+    width:74vw;
+  }
+  aside{
+    width:24vw;
+  }
 }
 .Footer{
   background-color: Firebrick;
