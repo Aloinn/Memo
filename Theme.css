@@ -8,8 +8,6 @@ body{
   font-family: 'Raleway';
 }
 h1{
-  margin-left: 20px;
-
   font-size:4em;
   font-family: 'Cuprum';
 }
@@ -67,18 +65,6 @@ p{
               MENU
 ===================================
 */
-#Logo{
-  position: absolute;
-  display: block;
-  top:0px;
-  left:25px;
-  //left: calc(50% - 255px);
-}
-
-
-
-
-
 .Navigation{
   color: #efefef;
   background-color: Firebrick;
@@ -105,6 +91,11 @@ p{
 .Navigation button:hover{
   background-color: IndianRed;
 }
+/*
+===================================
+            NEWSBAR
+===================================
+*/
 .Newsbar{
   font-family: Cuprum;
   font-size: 0.8em;
@@ -115,13 +106,11 @@ p{
 
   z-index: 1
 }
-.Wrapper{
-  background-color: #efefef;
-  width: 1200px;
-  height:500px;
-
-  z-index: 0;
-}
+/*
+===================================
+          PICTURE OF MEMO
+===================================
+*/
 .MainIMG{
   margin-left: 0px auto;
   margin-right: 0px auto;
@@ -129,49 +118,55 @@ p{
 
   z-index: 0;
 }
-.MainIMG h2{
-  margin: 0px auto;
-  position: absolute;
-
-  bottom:30px;
-  left:30px;
-
-  font-size: 4vw;
-  font-family: 'Cuprum';
-  color: #efefef;
-}
 .MIMG{
   filter: contrast(90%) brightness(60%);
   width: 100%;
 }
 #Quotes{
+  margin: 0px auto;
+  position: absolute;
 
+  bottom:90px;
+  left:90px;
+
+  font-size: 4vw;
+  font-family: 'Cuprum';
+  color: #efefef;
+}
+/*
+===================================
+          MAIN BODY
+===================================
+*/
+.Wrapper{
+  background-color: #efefef;
+  width: 1200px;
+  height:500px;
+
+  z-index: 0;
 }
 main{
   margin-top: 10px;
   width:900px;
   float:left;
 }
+main h1{
+  margin-left: 15px;
+}
+main p{
+  margin-left: 15px;
+}
 aside{
-  width:300px;
+  margin-top:10px;
+  margin-left:5px;
+  width:295px;
   float:left;
 }
-@media only screen and (max-width:1200px){
-  #Title{
-    text-align: left;
-  }
-  /*.Navigation button{
-    width: 100vw;
-    margin-top: 1px;
-    margin-bottom: 1px;
-  }*/
-  main{
-    width:74vw;
-  }
-  aside{
-    width:24vw;
-  }
-}
+/*
+===================================
+          END OF SITE
+===================================
+*/
 .Footer{
   background-color: Firebrick;
 }
@@ -180,4 +175,34 @@ aside{
   text-align: center;
   padding: 20px 0px 20px 0px;
   background-color: DarkRed;
+}
+/*
+===================================
+    RESPONSIVE WEBPAGE DESIGN
+===================================
+*/
+@media only screen and (max-width:1200px){
+  .Wrapper{
+    width: calc(100% - 15px)
+  }
+  #Title{
+    left: 15px;
+    text-align: left;
+  }
+  #Quotes{
+    bottom:30px;
+    left:30px;
+  }
+  /*.Navigation button{
+    width: 100vw;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }*/
+  main{
+    width:100%
+  }
+  aside{
+    margin-left: 15px;
+    width:100%
+  }
 }
